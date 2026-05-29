@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://stillcorner.space/sitemap.xml
+Sitemap: https://ironledge.online/sitemap.xml

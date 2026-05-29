@@ -1,5 +1,5 @@
 .about-section {
-  background: #fffad0;
+  background: #fdfff6;
 
   @include media(desktop) {
   }
@@ -7,20 +7,13 @@
 
 .about-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 450px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/about/about-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0;
     max-width: 1440px;
-    background-image: url(../img/about/about-bg-desk.jpg);
   }
 }
 
@@ -30,14 +23,25 @@
 }
 
 .about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
   @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .about-text-wrapper {
   @include media(desktop) {
-    max-width: 728px;
-    margin-left: auto;
+    max-width: 582px;
+  }
+}
+
+.about-title {
+  @include media(desktop) {
   }
 }
 
@@ -50,17 +54,43 @@
   }
 }
 
-.about-title {
+.about-top-text {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: lowercase;
+  color: #3f4235;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+    max-width: 542px;
+    margin-bottom: 8px;
+  }
+}
+
+.about-title-span {
+  text-transform: capitalize;
+
+  @include media(desktop) {
+  }
+}
+
+.about-span {
+  font-weight: 700;
+
   @include media(desktop) {
   }
 }
 
 .about-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.55);
+  text-transform: capitalize;
+  color: #3f4235;
 
   @include media(desktop) {
     font-size: 18px;
@@ -68,15 +98,12 @@
   }
 }
 
-.about-span {
-  font-weight: 700;
-  color: #000;
-
-  @include media(desktop) {
-  }
-}
-
 .about-img {
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
+    min-width: 574px;
+    margin: 0;
   }
 }
