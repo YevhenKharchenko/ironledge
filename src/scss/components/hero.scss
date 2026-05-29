@@ -1,24 +1,25 @@
 .hero-section {
+  background: #0fc;
+
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 142px;
-  padding-bottom: 482px;
+  padding-top: 159px;
+  padding-bottom: 473px;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-image: url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 178px;
-    padding-bottom: 100px;
+    padding-top: 245px;
+    padding-bottom: 171px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
-    background-position: bottom right;
+    background-image: url(../img/hero/hero-bg-desk.png);
   }
 }
 
@@ -34,64 +35,68 @@
 
 .hero-text-wrapper {
   @include media(desktop) {
-    max-width: 519px;
+    position: relative;
   }
 }
 
 .hero-title {
-  font-family: 'Palanquin Dark', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.16667;
-  color: #060606;
-  margin-bottom: 24px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.13333;
+  text-transform: uppercase;
+  color: #0c1000;
+  max-width: 240px;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 60px;
-    line-height: 1.06667;
+    font-size: 120px;
+    line-height: 1;
+    max-width: 616px;
+    margin-bottom: 32px;
   }
 }
 
-.hero-subtitle {
-  font-family: 'Inter', sans-serif;
+.hero-top-text {
+  font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #060606;
-  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  color: #0c1000;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 407px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 132px;
+    left: 481px;
   }
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 
   @include media(desktop) {
   }
 }
 
 .hero-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #737373;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  color: #0c1000;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-}
-
-.hero-text-span {
-  font-weight: 700;
-  color: #060606;
-
-  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 692px;
   }
 }

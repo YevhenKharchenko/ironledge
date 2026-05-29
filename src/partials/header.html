@@ -1,28 +1,45 @@
 <header class="header">
   <div class="container header-container">
     <nav class="nav">
-      <a class="header-logo-link" href="./">Still Corner</a>
+      <a class="header-logo-link" href="./">
+        <picture>
+          <source
+            srcset="./img/header/header-logo-desk.png"
+            media="(min-width: 1440px)"
+            width="290"
+            height="35"
+          />
+          <source
+            srcset="./img/header/header-logo-mob.png"
+            width="235"
+            height="28"
+          />
+          <img
+            class="header-logo-img"
+            src="./img/header/header-logo-mob.png"
+            alt="Logo"
+            width="235"
+            height="28"
+          /> </picture
+      ></a>
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#about">Meet Mira</a>
+          <a class="nav-list-link" href="./index.html#home">Home</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#works"
-            >What You’re Looking For</a
-          >
+          <a class="nav-list-link" href="./index.html#about">About System</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#gameplay">How It Works</a>
+          <a class="nav-list-link" href="./index.html#gameplay">Defense Grid</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#features"
-            >The “Click” Moment</a
-          >
+          <a class="nav-list-link" href="./index.html#progress">Upgrades</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#progress">Progression</a>
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
         </li>
       </ul>
+      <a href="./index.html#contact" class="header-contact-link">Contact</a>
       <button class="nav-btn" type="button" aria-label="Open mobile menu">
         <svg class="menu-icon" width="24" height="24">
           <use href="./img/sprite.svg#icon-menu"></use>
